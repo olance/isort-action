@@ -1,0 +1,16 @@
+name: 'Sort your Python imports with isort'
+description: 'Format Python code using isort'
+author: 'Olivier Lance <olivier@techtrails.io>'
+inputs:
+  args:
+    description: 'Arguments provided to isort'
+    required: false
+    default: '--recursive .'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
+branding:
+  icon: 'code'  
+  color: 'blue'
