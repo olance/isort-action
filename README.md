@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Run isort
-      uses: olance/isort-action@v1.0.0
+      uses: olance/isort-action@v1.1.0
       with:
         args: .
       
